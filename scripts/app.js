@@ -1,6 +1,12 @@
 //Referencia a tag <section> do html dentro da variavel section
 let section = document.getElementById("resultados-pesquisa");
 
+document.addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    pesquisar();
+  }
+});
+
 //Função acionada ao clicar no botão de pesquisar
 function pesquisar(){
     
